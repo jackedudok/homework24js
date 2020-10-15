@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Final Work JS</title>
+</head>
+
+<body>
+
+    <nav>
+        
+        <div class="nav-menu">
+            <div class="menu-icons">
+                <div class="editor">
+                    <input type="button" class="editor-button" disabled>
+                </div>
+                
+                <div class="change-text">
+                    <input type="button" class="change-text-button bold-text">
+                    <input type="button" class="change-text-button italic-text">
+                    <input type="button" class="change-text-button underline-text">
+                    <input type="button" class="change-text-button strikethrough-text">
+                </div>
+
+                <div class="text-algin">
+                    <input type="button" class="text-algin-button text-algin-left">
+                    <input type="button" class="text-algin-button text-algin-center">
+                    <input type="button" class="text-algin-button text-algin-right">
+                </div>
+
+                <div class="edit-text">
+                    <input type="button" class="edit-text-button edit-text-font-family">
+                    <input type="button" class="edit-text-button edit-text-font-size">
+                    <input type="button" class="edit-text-button edit-text-color">
+                    <input type="button" class="edit-text-button edit-text-bc">
+                </div>
+
+                <div class="fonts">
+                    <div class="arial">Arial</div>
+                    <div class="georgia">Georgia</div>
+                    <div class="impact">Impact</div>
+                    <div class="tahoma">Tahoma</div>
+                    <div class="times-new-roman">Times New Roman</div>
+                    <div class="verdana">Verdana</div>
+                </div>
+
+                <div class="size-text">
+                    <div class="size-12px">12px</div>
+                    <div class="size-14px">14px</div>
+                    <div class="size-16px">16px</div>
+                    <div class="size-18px">18px</div>
+                    <div class="size-20px">20px</div>
+                    <div class="size-22px">22px</div>
+                    <div class="size-25px">25px</div>
+                    <div class="size-30px">30px</div>
+                </div>
+
+                <div class="text-color">
+
+                    <div class="text-color-part-top">
+                        <div class="text-color-part-top-descr">Choose text color</div>
+                        <div class="text-color-part-top-close">x</div>
+
+                    </div>
+
+                    <div class="text-color-part-bottom">
+                        <div class="text-color-box" style="background-color: turquoise;"></div>
+                        <div class="text-color-box" style="background-color: teal;"></div>
+                        <div class="text-color-box" style="background-color: green;"></div>
+                        <div class="text-color-box" style="background-color: darkgreen;"></div>
+                        <div class="text-color-box" style="background-color: skyblue;"></div>
+                        <div class="text-color-box" style="background-color: blue;"></div>
+                        <div class="text-color-box" style="background-color: violet;"></div>
+                        <div class="text-color-box" style="background-color: blueviolet;"></div>
+                        <div class="text-color-box" style="background-color: slateblue;"></div>
+                        <div class="text-color-box" style="background-color: darkslateblue;"></div>
+                        <div class="text-color-box" style="background-color:gold;"></div>
+                        <div class="text-color-box" style="background-color: goldenrod;"></div>
+                        <div class="text-color-box" style="background-color: orange;"></div>
+                        <div class="text-color-box" style="background-color: darkorange;"></div>
+                        <div class="text-color-box" style="background-color: red;"></div>
+                        <div class="text-color-box" style="background-color: darkred;"></div>
+                        <div class="text-color-box" style="background-color:lightgrey;"></div>
+                        <div class="text-color-box" style="background-color: darkgrey;"></div>
+                        <div class="text-color-box" style="background-color: grey;"></div>
+                        <div class="text-color-box" style="background-color: dimgray;"></div>
+                        <div class="text-color-box" style="background-color: black;"></div>
+                    </div>
+                </div>
+                
+                <div class="bc-color">
+
+                    <div class="bc-color-part-top">
+                        <div class="bc-color-part-top-descr">Choose background color or image</div>
+                        <div class="bc-color-part-top-close">x</div>
+                    </div>
+
+                    <div class="bc-inputs">
+                        <input type="button" class="bc-colors-buttton" value="Colors">
+                        <input type="button" class="bc-images-buttton" value="Images">
+                        <input type="button" class="bc-files-buttton" value="Files">
+                        <div class="spliter"></div>
+                    </div>
+
+                    <div class="bc-color-part-bottom">
+                        <div class="bc-color-box" style="background-color: turquoise;"></div>
+                        <div class="bc-color-box" style="background-color: teal;"></div>
+                        <div class="bc-color-box" style="background-color: green;"></div>
+                        <div class="bc-color-box" style="background-color: darkgreen;"></div>
+                        <div class="bc-color-box" style="background-color: skyblue;"></div>
+                        <div class="bc-color-box" style="background-color: blue;"></div>
+                        <div class="bc-color-box" style="background-color: violet;"></div>
+                        <div class="bc-color-box" style="background-color: blueviolet;"></div>
+                        <div class="bc-color-box" style="background-color: slateblue;"></div>
+                        <div class="bc-color-box" style="background-color: darkslateblue;"></div>
+                        <div class="bc-color-box" style="background-color:gold;"></div>
+                        <div class="bc-color-box" style="background-color: goldenrod;"></div>
+                        <div class="bc-color-box" style="background-color: orange;"></div>
+                        <div class="bc-color-box" style="background-color: darkorange;"></div>
+                        <div class="bc-color-box" style="background-color: red;"></div>
+                        <div class="bc-color-box" style="background-color: darkred;"></div>
+                        <div class="bc-color-box" style="background-color:lightgrey;"></div>
+                        <div class="bc-color-box" style="background-color: darkgrey;"></div>
+                        <div class="bc-color-box" style="background-color: grey;"></div>
+                        <div class="bc-color-box" style="background-color: dimgray;"></div>
+                        <div class="bc-color-box" style="background-color: black;"></div>
+                    </div>
+
+                    <div class="bc-img-part-bottom">
+                        <div class="bc-image-box" style="background-image: url(./bc-img/1.jpg);"></div>
+                        <div class="bc-image-box" style="background-image: url(./bc-img/2.jpg);"></div>
+                        <div class="bc-image-box" style="background-image: url(./bc-img/3.jpg);"></div>
+                        <div class="bc-image-box" style="background-image: url(./bc-img/4.jpg);"></div>
+                        <div class="bc-image-box" style="background-image: url(./bc-img/5.jpg);"></div>
+                        <div class="bc-image-box" style="background-image: url(./bc-img/6.jpg);"></div>
+                        <div class="bc-image-box" style="background-image: url(./bc-img/7.jpg);"></div>
+                        <div class="bc-image-box" style="background-image: url(./bc-img/8.jpg);"></div>
+                        <div class="bc-image-box" style="background-image: url(./bc-img/9.jpg);"></div>
+                    </div>
+
+                    <div class="bc-file-part-bottom">
+                        <div class="input-group">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="inputGroupFile02" multiple>
+                                <label class="custom-file-label" for="inputGroupFile02"
+                                    aria-describedby="inputGroupFileAddon02">Choose file...</label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="lock-s">
+                    <input type="button" class="lock lock-close"></input>
+                    <input type="button" class="lock lock-open"></input>
+                </div>
+
+                <div class="sing-in">
+                    <h3 class="sing-in-descr">Sing In</h3>
+                    <div class="spliter"></div>
+                    <form name="singIn" class="singIn">
+                        <input name="singInlogin" class="form-control singIn-login" type="text"
+                            placeholder="Login here...">
+                        <input name="singInPassword" class="form-control singIn-password" type="password"
+                            placeholder="Password here...">
+                        <div class="value-is-empty">Value is empty</div>
+                        <div class="check-login-password">Please check your login or password</div>
+                        <button name="btnSingIn" type="button" class="btn btn-secondary">Sing In</button>
+                    </form>
+                </div>
+
+                <div class="sing-out">
+                    <button type="button" class="btn btn-dark btn-cancel">Cancel</button>
+                    <button type="button" class="btn btn-danger btn-sing-out">Sing out</button>
+                </div>
+
+
+            </div>
+
+            <div class="menu-icons2">
+
+                <div class=" add-new-text">
+                    <input type="button" class="add-new-tex-button save">
+                    <input type="button" class="add-new-tex-button new-table">
+                    <input type="button" class="add-new-tex-button new-list-ol">
+                    <input type="button" class="add-new-tex-button new-list-ul">
+                </div>
+
+                <div class="table">
+
+                    <div class="table-part-top">
+                        <div class="table-part-top-descr">Create table</div>
+                        <div class="table-part-top-close">x</div>
+                    </div>
+
+                    <form name="tableForm" class="table-form">
+                        <div class="teble-left-and-right-part">
+                            <div class="tableForm-left-part">
+                                <label>Count TR:
+                                    <input name="countTr" class="form-control " type="text" placeholder="Type here...">
+                                </label>
+                                <label>Width of TD:
+                                    <input name="widthOfTD" class="form-control " type="text"
+                                        placeholder="Type here...">
+                                </label>
+                                <label>Width of border:
+                                    <input name="widthOfBorder" class="form-control " type="text"
+                                        placeholder="Type here...">
+                                </label>
+
+                            </div>
+                            <div class="tableForm-right-part">
+                                <label>Count TD:
+                                    <input name="countTd" class="form-control" type="text" placeholder="Type here...">
+                                </label>
+                                <label>Height of TD:
+                                    <input name="heightOfTd" class="form-control " type="text"
+                                        placeholder="Type here...">
+                                </label>
+                                <div class="table-style-of-border">
+                                    <label class="style-of-border">Style of border:
+                                        <select name="styleOfBorder" class="custom-select mr-sm-2"
+                                            id="inlineFormCustomSelect">
+                                            <option value="choosestyle" selected>choose style</option>
+                                            <option value="dotted">dotted</option>
+                                            <option value="dashed">dashed</option>
+                                            <option value="solid">solid</option>
+                                            <option value="double">double</option>
+                                            <option value="groove">groove</option>
+                                            <option value="ridge">ridge</option>
+                                            <option value="inset">inset</option>
+                                            <option value="outset">outset</option>
+                                        </select>
+
+                                    </label>
+                                    <label class="color-of-border">Color of border:
+                                        <select name="colorOfBorder" class="custom-select mr-sm-2"
+                                            id="inlineFormCustomSelect">
+                                            <option value="choosecolor" selected>choose color</option>
+                                            <option value="black">black</option>
+                                            <option value="red">red</option>
+                                            <option value="green">green</option>
+                                            <option value="blue">blue</option>
+                                            <option value="yellow">yellow</option>
+                                            <option value="white">white</option>
+                                            <option value="gray">gray</option>
+                                            <option value="pink">pink</option>
+                                        </select>
+                                    </label>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="invalid-value">invalid value</div>
+
+                        <div class="btn-table">
+                            <button type="button" class="btn btn-danger reset-table">Reset</button>
+                            <button type="button" class="btn btn-success create-table">Create</button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+                <div class="list-ol">
+
+                    <div class="list-ol-part-top">
+                        <div class="list-ol-part-top-descr">Create Ol</div>
+                        <div class="list-ol-part-top-close">x</div>
+                    </div>
+
+                    <div class="list-ol-part-bottom">
+                        <label>Count li item:
+                            <input class="form-control count-li-ol" type="text" placeholder="Type here...">
+                        </label>
+                        
+                        <label class="type-mark-ol">Type mark of list:
+                            <select class="custom-select mr-sm-2 type-Ol" id="inlineFormCustomSelect">
+                                <option value="chooseOl" selected>choose Ol type mark</option>
+                                <option value="A">A</option>
+                                <option value="a">a</option>
+                                <option value="I">I</option>
+                                <option value="i">i</option>
+                                <option value="1">1</option>
+                            </select>
+                            <div class="invalid-value-ol">invalid value</div>
+                            <div class="btn-list-ol">
+                                <button type="button" class="btn btn-danger reset-list-ol">Reset</button>
+                                <button type="button" class="btn btn-success create-list-ol">Create list</button>
+
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="list-ul">
+                    <div class="list-ol-part-top">
+                        <div class="list-ul-part-top-descr">Create Ul</div>
+                        <div class="list-ul-part-top-close">x</div>
+
+                    </div>
+                    <div class="list-ul-part-bottom">
+                        <label>Count li item:
+                            <input class="form-control count-li-ul" type="text" placeholder="Type here...">
+                        </label>
+                        <label class="type-mark-ul">Type mark of list:
+                            <select class="custom-select mr-sm-2 type-ul" id="inlineFormCustomSelect">
+                                <option value="chooseUl" selected>choose Ul type mark</option>
+                                <option value="disc">disc</option>
+                                <option value="circle">circle</option>
+                                <option value="square">square</option>
+                            </select>
+
+                            <div class="invalid-value-ul">invalid value</div>
+                            <div class="btn-list-ul">
+                                <button type="button" class="btn btn-danger reset-list-ul">Reset</button>
+                                <button type="button" class="btn btn-success create-list-ul">Create list</button>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+
+    <div class="text-area">
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </div>
+
+    <div class="table-box">
+
+    </div>
+    <div class="list-box">
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
